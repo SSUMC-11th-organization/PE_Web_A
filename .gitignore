@@ -39,3 +39,6 @@ pnpm-debug.log*
 *.swp
 .DS_Store
 Thumbs.db
+
+# claude
+STUDY_NOTES.md

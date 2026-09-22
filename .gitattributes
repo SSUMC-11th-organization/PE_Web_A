@@ -1,0 +1,20 @@
+# Auto detect text files and normalize line endings to LF in the repo
+* text=auto eol=lf
+
+# Never touch line endings in binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.webp binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.otf binary
+*.pdf binary
+*.zip binary
+
+# SVGs are text but should stay LF-normalized
+*.svg text eol=lf
