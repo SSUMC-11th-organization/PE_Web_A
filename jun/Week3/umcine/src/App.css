@@ -1,0 +1,16 @@
+.main {
+  flex: 1;
+  padding: 40px 48px 64px;
+}
+
+.movie-section__title {
+  font-size: 24px;
+  letter-spacing: -0.24px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  .main {
+    padding: 24px 20px 40px;
+  }
+}
