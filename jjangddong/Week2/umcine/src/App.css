@@ -319,6 +319,43 @@
   cursor: not-allowed;
 }
 
+/* ===== 제공된 아이콘 (mask로 색을 입혀 사용) ===== */
+.movie-card__bookmark-icon {
+  width: 22px;
+  height: 22px;
+  background-color: currentColor;
+  -webkit-mask: url("/icons/bookmark-outline.svg") no-repeat center / contain;
+  mask: url("/icons/bookmark-outline.svg") no-repeat center / contain;
+}
+
+.movie-card__bookmark--active .movie-card__bookmark-icon {
+  -webkit-mask-image: url("/icons/bookmark.svg");
+  mask-image: url("/icons/bookmark.svg");
+}
+
+.pagination__arrow {
+  display: grid;
+  place-items: center;
+}
+
+.pagination__arrow-icon {
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  -webkit-mask: no-repeat center / contain;
+  mask: no-repeat center / contain;
+}
+
+.pagination__arrow-icon--prev {
+  -webkit-mask-image: url("/icons/chevron-left.svg");
+  mask-image: url("/icons/chevron-left.svg");
+}
+
+.pagination__arrow-icon--next {
+  -webkit-mask-image: url("/icons/chevron-right.svg");
+  mask-image: url("/icons/chevron-right.svg");
+}
+
 /* ===== 선택 미션: 반응형 그리드 (3열 / 2열 / 1열) ===== */
 @media (max-width: 1200px) {
   .movie-grid {

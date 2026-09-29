@@ -20,7 +20,7 @@ export default function Pagination({
         aria-label="이전 페이지"
         onClick={() => onChangePage(currentPage - 1)}
       >
-        ‹
+        <span className="pagination__arrow-icon pagination__arrow-icon--prev" />
       </button>
 
       <ul className="pagination__list">
@@ -49,7 +49,7 @@ export default function Pagination({
         aria-label="다음 페이지"
         onClick={() => onChangePage(currentPage + 1)}
       >
-        ›
+        <span className="pagination__arrow-icon pagination__arrow-icon--next" />
       </button>
     </nav>
   );
