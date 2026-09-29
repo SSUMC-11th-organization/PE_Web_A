@@ -2,7 +2,6 @@ import { useState } from "react";
 import MovieGrid from "../../components/movies/movie-grid";
 import Pagination from "../../components/movies/pagination";
 import { movies as initialMovies } from "../../data/movies";
-import "../../App.css";
 
 const TOTAL_PAGES = 5;
 
@@ -25,10 +24,12 @@ export function MovieListPage() {
   }
 
   return (
-    <main className="main">
-      <div className="main__head">
-        <h1 className="main__title">영화 목록</h1>
-        <p className="main__subtitle">
+    <main className="mx-auto w-full max-w-[1280px] px-8 pt-12 pb-20 max-lg:px-5 max-sm:pt-8">
+      <div className="mb-8">
+        <h1 className="text-[32px] font-bold tracking-[-0.8px] max-sm:text-[26px]">
+          영화 목록
+        </h1>
+        <p className="mt-2 text-[15px] text-muted">
           지금 가장 주목받는 영화 {movieList.length}편을 만나 보세요.
         </p>
       </div>

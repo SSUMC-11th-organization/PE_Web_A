@@ -11,11 +11,13 @@ export default function MovieGrid({
   onToggleBookmark,
 }: MovieGridProps) {
   if (movies.length === 0) {
-    return <p className="movie-grid__empty">표시할 영화가 없어요.</p>;
+    return (
+      <p className="py-20 text-center text-muted">표시할 영화가 없어요.</p>
+    );
   }
 
   return (
-    <ul className="movie-grid">
+    <ul className="grid grid-cols-1 gap-x-6 gap-y-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
       {movies.map((movie) => (
         <li key={movie.id}>
           <MovieCard movie={movie} onToggleBookmark={onToggleBookmark} />
