@@ -2,7 +2,6 @@ import { useState } from "react";
 import MovieGrid from "../../components/movies/movie-grid";
 import Pagination from "../../components/movies/pagination";
 import { movies as initialMovies } from "../../data/movies";
-import "../../App.css";
 
 const MOVIES_PER_PAGE = 10;
 
@@ -26,9 +25,9 @@ export function MovieListPage() {
   const pageMovies = movies.slice(startIndex, startIndex + MOVIES_PER_PAGE);
 
   return (
-    <main className="main">
-      <section className="movie-section">
-        <h2 className="movie-section__title">영화 목록</h2>
+    <main className="flex-1 px-5 pt-6 pb-10 sm:px-12 sm:pt-10 sm:pb-16 xl:px-20">
+      <section>
+        <h1 className="mb-6 text-[28px] font-bold tracking-[-0.3px]">영화 목록</h1>
 
         <MovieGrid movies={pageMovies} onToggleBookmark={handleToggleBookmark} />
 

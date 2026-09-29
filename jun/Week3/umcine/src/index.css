@@ -1,56 +1,43 @@
-:root {
-  --bg: #ffffff;
-  --surface: #ffffff;
-  --surface-hover: #f0f0f3;
-  --text: #131316;
-  --text-muted: #8b8b93;
-  --border: #e6e6ea;
-  --accent: #2563eb;
-  --accent-bg: rgba(37, 99, 235, 0.1);
-  --badge-dim: rgba(19, 19, 22, 0.55);
+@import "tailwindcss";
 
-  font: 16px/145% system-ui, 'Segoe UI', Roboto, sans-serif;
-  color-scheme: light;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@theme {
+  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+
+  --color-page: #f6f7f9;
+  --color-surface-hover: #f0f0f3;
+  --color-text: #131316;
+  --color-sub: #4b4b53;
+  --color-muted: #8b8b93;
+  --color-border: #e6e6ea;
+  --color-accent: #2563eb;
+  --color-accent-bg: rgb(37 99 235 / 0.1);
 }
 
-* {
-  box-sizing: border-box;
-}
+@layer base {
+  :root {
+    color-scheme: light;
+    line-height: 1.45;
+    color: var(--color-text);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-body {
-  margin: 0;
-}
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100svh;
+    background: var(--color-page);
+  }
 
-#root {
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-}
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+  }
 
-h1,
-h2,
-h3 {
-  margin: 0;
-  font-weight: 600;
-}
-
-p {
-  margin: 0;
-}
-
-button {
-  font: inherit;
-  color: inherit;
-  cursor: pointer;
-}
-
-img {
-  display: block;
-  max-width: 100%;
+  button:not(:disabled) {
+    cursor: pointer;
+  }
 }
