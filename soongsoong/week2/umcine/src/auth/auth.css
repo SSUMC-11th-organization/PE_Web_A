@@ -1,0 +1,108 @@
+.auth {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 428px;
+}
+
+.auth-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.96px;
+}
+
+/* text field */
+.text-field-label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.text-field-box {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: var(--color-surface);
+}
+
+.text-field-box:focus-within {
+  border-color: var(--color-primary);
+}
+
+.text-field-box--error,
+.text-field-box--error:focus-within {
+  border-color: #ef4444;
+}
+
+.text-field-icon {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+.text-field-input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  font: inherit;
+  font-size: 13px;
+  color: var(--color-text);
+}
+
+.text-field-input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.text-field-action {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.text-field-message {
+  margin-top: 4px;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.text-field-message--error {
+  color: #ef4444;
+}
+
+/* submit */
+.auth-submit {
+  height: 46px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.auth-switch {
+  font-size: 12px;
+  color: var(--color-text-sub);
+  text-align: center;
+}
+
+.auth-switch button {
+  font-weight: 700;
+  color: var(--color-primary);
+}
