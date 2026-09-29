@@ -1,0 +1,194 @@
+.my-page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.my-page-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-page-title {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.96px;
+}
+
+.my-page-description {
+  margin-top: 8px;
+  font-size: 13px;
+  color: var(--color-text-sub);
+}
+
+.my-page-primary-button {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 6px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* 내 정보 */
+.my-page-section {
+  padding: 16px 0 12px;
+  border-top: 1px solid var(--color-border);
+}
+
+.my-page-heading + .my-page-section {
+  margin-top: 28px;
+}
+
+.my-page-section + .my-page-section {
+  padding-top: 32px;
+}
+
+.my-page-section-title {
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.my-page-profile {
+  display: grid;
+  grid-template-columns: 82px 373px 1fr;
+  align-items: center;
+  gap: 28px;
+}
+
+.my-page-profile-item dt {
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.my-page-profile-item dd {
+  margin: 6px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.my-page-empty {
+  padding: 40px 0;
+  font-size: 14px;
+  color: var(--color-text-sub);
+  text-align: center;
+}
+
+/* 프로필 이미지 */
+.profile-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--color-border);
+}
+
+.profile-avatar-default {
+  width: 40px;
+  height: 40px;
+}
+
+.profile-avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 내 정보 수정 */
+.my-page-edit-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+}
+
+.my-page-edit-avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.my-page-edit-avatar-image {
+  position: relative;
+}
+
+.my-page-edit-avatar-button {
+  position: absolute;
+  right: -4px;
+  bottom: -4px;
+  display: flex;
+  border-radius: 50%;
+  background: var(--color-surface);
+}
+
+.my-page-edit-avatar-label {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.my-page-edit-avatar-hint {
+  margin-top: 4px;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+
+.my-page-edit-avatar-error {
+  margin-top: 4px;
+  font-size: 11px;
+  color: #ef4444;
+}
+
+.my-page-edit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 회원 탈퇴 */
+.withdraw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding: 20px 20px 20px 20px;
+  border: 1px solid #dc2626;
+  border-radius: 8px;
+  background: #f5e4e4;
+}
+
+.my-page--edit .my-page-edit-body {
+  margin-bottom: 80px;
+}
+
+.withdraw-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #c0262d;
+}
+
+.withdraw-description {
+  margin-top: 6px;
+  font-size: 10px;
+  color: #c0262d;
+}
+
+.withdraw-button {
+  height: 42px;
+  padding: 0 16px;
+  border: 1px solid #dc2626;
+  border-radius: 8px;
+  background: var(--color-surface);
+  color: #c0262d;
+  font-size: 13px;
+  font-weight: 700;
+}
